@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>osgi-awakening</groupId>
-    <artifactId>osgi-awakening</artifactId>
+    <artifactId>osgi-awakening-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -17,7 +18,7 @@
         <!-- Dependency Versions -->
         <junit.version>4.11</junit.version>
         <log4j.version>1.2.17</log4j.version>
-        <osgi.version>5.0.0</osgi.version>
+        <osgi.version>6.0.0</osgi.version>
         <pax.exam.version>4.10.0</pax.exam.version>
         <slf4j.version>1.7.25</slf4j.version>
 
@@ -37,19 +38,22 @@
     </properties>
 
     <modules>
+        <module>osgi-awakening-minimal</module>
+        <module>osgi-awakening-hello</module>
     </modules>
 
     <dependencies>
+
         <dependency>
             <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
+            <artifactId>osgi.core</artifactId>
             <version>${osgi.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.compendium</artifactId>
+            <artifactId>osgi.cmpn</artifactId>
             <version>${osgi.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -59,12 +63,14 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -149,4 +155,3 @@
         </pluginManagement>
     </build>
 </project>
-
