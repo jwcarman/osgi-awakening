@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>osgi-awakening</groupId>
-    <artifactId>osgi-awakening-parent</artifactId>
+    <groupId>osgi-demystified</groupId>
+    <artifactId>osgi-demystified-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>OSGi Awakening :: Parent</name>
+    <name>OSGi Demystified :: Parent</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +24,7 @@
 
         <!-- Plugin Versions -->
         <antrun.plugin.version>1.8</antrun.plugin.version>
-        <bundle.plugin.version>3.2.0</bundle.plugin.version>
+        <bundle.plugin.version>3.5.0</bundle.plugin.version>
 
         <!-- OSGi Settings -->
         <osgi.export>{local-packages};-split-package:=error</osgi.export>
@@ -38,8 +38,8 @@
     </properties>
 
     <modules>
-        <module>osgi-awakening-minimal</module>
-        <module>osgi-awakening-hello</module>
+        <module>minimal</module>
+        <module>hello</module>
     </modules>
 
     <dependencies>

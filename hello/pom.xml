@@ -3,19 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>osgi-awakening</groupId>
-        <artifactId>osgi-awakening-parent</artifactId>
+        <groupId>osgi-demystified</groupId>
+        <artifactId>osgi-demystified-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>osgi-awakening-hello</artifactId>
+    <artifactId>osgi-demystified-hello</artifactId>
 
     <packaging>bundle</packaging>
 
-    <name>OSGi Awakening :: Hello</name>
+    <name>OSGi Demystified :: Hello</name>
 
     <properties>
-        <osgi.activator>osgi.awakening.HelloOsgi</osgi.activator>
+        <osgi.activator>osgi.demystified.HelloOsgi</osgi.activator>
     </properties>
 
     <build>

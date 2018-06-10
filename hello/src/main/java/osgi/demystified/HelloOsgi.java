@@ -1,4 +1,4 @@
-package osgi.awakening;
+package osgi.demystified;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
